@@ -30,13 +30,13 @@ const ScreenOne = ({navigation}: {navigation: any}) => {
         </Text>
         <Text
           style={{fontFamily: fontFamilies.ROBOTO.medium}}
-          className="text-xl w-full mt-2 text-gray-500">
+          className="text-xl w-full mt-2 text-gray-400">
           Get organized and boost your productivity by managing tasks
           efficiently with our app.
         </Text>
         <Button
           size={'$4'}
-          onPress={() => navigation.navigate('login')}
+          onPress={() => navigation.navigate('signup')}
           className="mt-8 bg-black w-full text-base">
           <H4
             style={{

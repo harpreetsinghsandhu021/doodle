@@ -959,6 +959,47 @@
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.7.tgz"
   integrity sha512-X8R8Oj771YRl/w+c1HqAC1szL8zWQRwFvgDwT129k9ACdBoud/+/rX9V0qiMl6LWUdP9voC2nDVZYPMQQsb6eA==
 
+"@fortawesome/fontawesome-common-types@6.6.0":
+  version "6.6.0"
+  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.6.0.tgz"
+  integrity sha512-xyX0X9mc0kyz9plIyryrRbl7ngsA9jz77mCZJsUkLl+ZKs0KWObgaEBoSgQiYWAsSmjz/yjl0F++Got0Mdp4Rw==
+
+"@fortawesome/fontawesome-svg-core@^6.6.0", "@fortawesome/fontawesome-svg-core@~1 || ~6":
+  version "6.6.0"
+  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.6.0.tgz"
+  integrity sha512-KHwPkCk6oRT4HADE7smhfsKudt9N/9lm6EJ5BVg0tD1yPA5hht837fB87F8pn15D8JfTqQOjhKTktwmLMiD7Kg==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.6.0"
+
+"@fortawesome/free-brands-svg-icons@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.6.0.tgz"
+  integrity sha512-1MPD8lMNW/earme4OQi1IFHtmHUwAKgghXlNwWi9GO7QkTfD+IIaYpIai4m2YJEzqfEji3jFHX1DZI5pbY/biQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.6.0"
+
+"@fortawesome/free-regular-svg-icons@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.npmjs.org/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.6.0.tgz"
+  integrity sha512-Yv9hDzL4aI73BEwSEh20clrY8q/uLxawaQ98lekBx6t9dQKDHcDzzV1p2YtBGTtolYtNqcWdniOnhzB+JPnQEQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.6.0"
+
+"@fortawesome/free-solid-svg-icons@^6.6.0":
+  version "6.6.0"
+  resolved "https://registry.npmjs.org/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.6.0.tgz"
+  integrity sha512-IYv/2skhEDFc2WGUcqvFJkeK39Q+HyPf5GHUrT/l2pKbtgEIv1al1TKd6qStR5OIwQdN1GZP54ci3y4mroJWjA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.6.0"
+
+"@fortawesome/react-native-fontawesome@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/@fortawesome/react-native-fontawesome/-/react-native-fontawesome-0.3.2.tgz"
+  integrity sha512-CiWfJWSZHRg12VXlaeFnaa5yJVPOrjsSFEvF6ntz3cnjg4oN3cvauL+JATacMCl0v9xzib32qC1WZAvvGkfB4w==
+  dependencies:
+    humps "^2.0.1"
+    prop-types "^15.7.2"
+
 "@hapi/hoek@^9.0.0", "@hapi/hoek@^9.3.0":
   version "9.3.0"
 
@@ -1427,6 +1468,23 @@
     serve-static "^1.13.1"
     ws "^6.2.3"
 
+"@react-native-community/cli-tools@^13.6.9":
+  version "13.6.9"
+  resolved "https://registry.npmjs.org/@react-native-community/cli-tools/-/cli-tools-13.6.9.tgz"
+  integrity sha512-OXaSjoN0mZVw3nrAwcY1PC0uMfyTd9fz7Cy06dh+EJc+h0wikABsVRzV8cIOPrVV+PPEEXE0DBrH20T2puZzgQ==
+  dependencies:
+    appdirsjs "^1.2.4"
+    chalk "^4.1.2"
+    execa "^5.0.0"
+    find-up "^5.0.0"
+    mime "^2.4.1"
+    node-fetch "^2.6.0"
+    open "^6.2.0"
+    ora "^5.4.1"
+    semver "^7.5.2"
+    shell-quote "^1.7.3"
+    sudo-prompt "^9.0.0"
+
 "@react-native-community/cli-tools@14.0.0-alpha.11":
   version "14.0.0-alpha.11"
   dependencies:
@@ -1479,6 +1537,24 @@
     graceful-fs "^4.1.3"
     prompts "^2.4.2"
     semver "^7.5.2"
+
+"@react-native-vector-icons/common@^0.0.1-alpha.20":
+  version "0.0.1-alpha.20"
+  resolved "https://registry.npmjs.org/@react-native-vector-icons/common/-/common-0.0.1-alpha.20.tgz"
+  integrity sha512-jHAsGHqzSQIr/P8XLRxZ289NlWzeMM9JZ94A+rhOfznMiCdo1b1IkdkofQsvX2bF2D59UPaj3o+FUfR+T+tR+w==
+  dependencies:
+    "@react-native-community/cli-tools" "^13.6.9"
+    picocolors "^1.0.1"
+    plist "^3.1.0"
+    prop-types "^15.8.1"
+    yargs "^17.7.2"
+
+"@react-native-vector-icons/fontawesome6@^6.6.0-alpha.28":
+  version "6.6.0-alpha.28"
+  resolved "https://registry.npmjs.org/@react-native-vector-icons/fontawesome6/-/fontawesome6-6.6.0-alpha.28.tgz"
+  integrity sha512-rj5jjiVPAevrCNr7PbyKaV8ORJi8Nk3l0d9D4ZmqfEr5mRVGIqS0yqYg0glEtLiTf03MNvu6Q3x+ZPv0TjfI1g==
+  dependencies:
+    "@react-native-vector-icons/common" "^0.0.1-alpha.20"
 
 "@react-native/assets-registry@0.75.2":
   version "0.75.2"
@@ -1641,6 +1717,15 @@
   dependencies:
     invariant "^2.2.4"
     nullthrows "^1.1.1"
+
+"@react-navigation/bottom-tabs@^6.6.1":
+  version "6.6.1"
+  resolved "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-6.6.1.tgz"
+  integrity sha512-9oD4cypEBjPuaMiu9tevWGiQ4w/d6l3HNhcJ1IjXZ24xvYDSs0mqjUcdt8SWUolCvRrYc/DmNBLlT83bk0bHTw==
+  dependencies:
+    "@react-navigation/elements" "^1.3.31"
+    color "^4.2.3"
+    warn-once "^0.1.0"
 
 "@react-navigation/core@^6.4.17":
   version "6.4.17"
@@ -1912,6 +1997,11 @@
   resolved "https://registry.npmjs.org/@tamagui/compose-refs/-/compose-refs-1.110.1.tgz"
   integrity sha512-OOeAA1KxzlZK6PwD6VB3rnAAN5JQVndaOa0ws1h1fSscVB3xwRE1drXwJVGxKLwsc2byIK1/RJdPwX8xXnntJQ==
 
+"@tamagui/compose-refs@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/compose-refs/-/compose-refs-1.110.2.tgz"
+  integrity sha512-hJqu/zdw3XDk5glfUrd3AzUJZuISvxw0Q+kdYP5Lc7Mty8X7fhPuD0c3pCWNQY3Zk4MZEldCYOQjNtFCg/G2Mg==
+
 "@tamagui/config@^1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/config/-/config-1.110.1.tgz"
@@ -1933,6 +2023,11 @@
   resolved "https://registry.npmjs.org/@tamagui/constants/-/constants-1.110.1.tgz"
   integrity sha512-6AQ7xCp0/1VCDXY0yJeR+iDOTSKpGdCpfiLJRxIHq/08P/S33Y+cK2Mw1S3sfXxRpeTjtsy9fXTxVgceWIIucA==
 
+"@tamagui/constants@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/constants/-/constants-1.110.2.tgz"
+  integrity sha512-hUELBb5UqQLiDamJu45gqaUSp+3GwtaMrM5R18XGBXnAOm7BfQBu0YstS2ClAE8sdDh3Pt5AXc5twuZmpe0yxA==
+
 "@tamagui/core@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/core/-/core-1.110.1.tgz"
@@ -1942,6 +2037,16 @@
     "@tamagui/react-native-use-responder-events" "1.110.1"
     "@tamagui/use-event" "1.110.1"
     "@tamagui/web" "1.110.1"
+
+"@tamagui/core@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/core/-/core-1.110.2.tgz"
+  integrity sha512-eOmdx1sZlsAgqOj0AaqmGzgQ+8m8GV1EYjzeBiZC2NbIucWqLTFXYAIsoDC0u34RD1BsSNhMaPlpP9fEzue+Xg==
+  dependencies:
+    "@tamagui/react-native-use-pressable" "1.110.2"
+    "@tamagui/react-native-use-responder-events" "1.110.2"
+    "@tamagui/use-event" "1.110.2"
+    "@tamagui/web" "1.110.2"
 
 "@tamagui/create-context@1.110.1":
   version "1.110.1"
@@ -2124,6 +2229,14 @@
     "@tamagui/constants" "1.110.1"
     "@tamagui/simple-hash" "1.110.1"
 
+"@tamagui/helpers@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/helpers/-/helpers-1.110.2.tgz"
+  integrity sha512-oQjYXkTeT/wOYYewyQn4qsJD5f9ZBUkLY8sqpO50I80THzVrs8r792G176DpgJkGN8icoEtEX7nL0hRBy+cWxg==
+  dependencies:
+    "@tamagui/constants" "1.110.2"
+    "@tamagui/simple-hash" "1.110.2"
+
 "@tamagui/image@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/image/-/image-1.110.1.tgz"
@@ -2183,6 +2296,13 @@
   dependencies:
     "@react-native/normalize-color" "^2.1.0"
 
+"@tamagui/normalize-css-color@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/normalize-css-color/-/normalize-css-color-1.110.2.tgz"
+  integrity sha512-ZcsdqSHGrCPZBqKP2guSUDpbULrv25GhsmcGvZA8T0+wwG3uKD8c/WBVXQZWrWrkRxWZAq5RCH1vgKN8F48buA==
+  dependencies:
+    "@react-native/normalize-color" "^2.1.0"
+
 "@tamagui/polyfill-dev@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/polyfill-dev/-/polyfill-dev-1.110.1.tgz"
@@ -2227,6 +2347,18 @@
     "@tamagui/stacks" "1.110.1"
     "@tamagui/start-transition" "1.110.1"
     "@tamagui/use-controllable-state" "1.110.1"
+
+"@tamagui/portal@^1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/portal/-/portal-1.110.2.tgz"
+  integrity sha512-FAlAa7BOin76LhXNslwCgxm5FUo9Lgl8xUMUo5BQS3Glg+lQuXbqWBpZZGlkvsPxFX/p83yyENoVnahHgajDbQ==
+  dependencies:
+    "@tamagui/constants" "1.110.2"
+    "@tamagui/core" "1.110.2"
+    "@tamagui/stacks" "1.110.2"
+    "@tamagui/start-transition" "1.110.2"
+    "@tamagui/use-did-finish-ssr" "1.110.2"
+    "@tamagui/use-event" "1.110.2"
 
 "@tamagui/portal@1.110.1":
   version "1.110.1"
@@ -2297,10 +2429,20 @@
   resolved "https://registry.npmjs.org/@tamagui/react-native-use-pressable/-/react-native-use-pressable-1.110.1.tgz"
   integrity sha512-UH5lpYllHgZyIAIPKJ4mDr4jnqO82h7qTaj2iVHPwteJR1pa/p2T2FaYxlfTKi3w94gjd+qx6WcjrkijvtfPoA==
 
+"@tamagui/react-native-use-pressable@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/react-native-use-pressable/-/react-native-use-pressable-1.110.2.tgz"
+  integrity sha512-fA4KkcN24Tg5+Mxw0e1U00sELWO2EAFxOc/o7ZzQsq9hCNB4q38NM3M28OHrQO9wgUDIQbphKAHcqlQW9eiGdA==
+
 "@tamagui/react-native-use-responder-events@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/react-native-use-responder-events/-/react-native-use-responder-events-1.110.1.tgz"
   integrity sha512-Slg62T58uJuAR3yWTT6UKfrpmIA1kv/4pQIKyiXFMKGJ0bTIGzgS6tcSUnOnRgUPe9NLy3WOvZ/aJrwcURzxRw==
+
+"@tamagui/react-native-use-responder-events@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/react-native-use-responder-events/-/react-native-use-responder-events-1.110.2.tgz"
+  integrity sha512-N2xB5+tYFAK8skD0lFy16oJv/9HhbXWPrS9ce5PGL3ycYBEx8hw3nxEatGSjcYu1r0+1PRFUKlq5tArzwH0Gwg==
 
 "@tamagui/remove-scroll@1.110.1":
   version "1.110.1"
@@ -2408,6 +2550,11 @@
   resolved "https://registry.npmjs.org/@tamagui/simple-hash/-/simple-hash-1.110.1.tgz"
   integrity sha512-pyJN0mrnk2hTTr1lvxKzYBRI5DxCGOgq2cMYxyJpaXoVU9/MmPgs1XJM/aPoEQo+f4Kxd5RD+9smSmfu0x3gAQ==
 
+"@tamagui/simple-hash@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/simple-hash/-/simple-hash-1.110.2.tgz"
+  integrity sha512-nZr5uZRXrR7VGYz3oJjjSolYAh8yqTm9k1YOIVb4rXrmf7hJ9kPuavPGbhhZHt+LmSQw1W5fDFkQVo465q8Peg==
+
 "@tamagui/slider@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/slider/-/slider-1.110.1.tgz"
@@ -2431,10 +2578,24 @@
   dependencies:
     "@tamagui/core" "1.110.1"
 
+"@tamagui/stacks@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/stacks/-/stacks-1.110.2.tgz"
+  integrity sha512-bDeNC4o9O80XM50PjbL0lNOL0KDHbdhw2nJf8t+Afuvv34I/nF0J4q5ooO3sowi9QK5w3yAoJQVN+0QEhuZwLw==
+  dependencies:
+    "@tamagui/core" "1.110.2"
+
 "@tamagui/start-transition@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/start-transition/-/start-transition-1.110.1.tgz"
   integrity sha512-3rzZwlf7o9WibH6t4sxD6OJf+dIoPuuajHbykvNaNua5St6VBzT8VAZEG5PvwRGALOjDQkMVgGC6zaB0qQMrTg==
+  dependencies:
+    react "^18.2.0 || ^19.0.0"
+
+"@tamagui/start-transition@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/start-transition/-/start-transition-1.110.2.tgz"
+  integrity sha512-fszX2+VeUw5wKqUohlBlJ3junPRVmcCufhYLX4p86Gt3HxnX/7dUiFWLH6iOlr8bAnsFgrSyqsNwGSVBOemxpQ==
   dependencies:
     react "^18.2.0 || ^19.0.0"
 
@@ -2523,6 +2684,11 @@
   resolved "https://registry.npmjs.org/@tamagui/timer/-/timer-1.110.1.tgz"
   integrity sha512-7+jSINddxPcIt+nPfu7PyrWmh9dqrL1mRc5YnmF/b2+ATfg9ZnC2e2bXf9R1IN7FDYl1SuGgcVqN2L2Gwp7AYQ==
 
+"@tamagui/timer@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/timer/-/timer-1.110.2.tgz"
+  integrity sha512-gJwL+co45TpMrIOYaqFCTvKvYuRzoVwBGiHBplZChPKyWfrunNLNRsUL5CIjk3re3o98KpGBU3SFMZVNx3g4NA==
+
 "@tamagui/toggle-group@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/toggle-group/-/toggle-group-1.110.1.tgz"
@@ -2566,6 +2732,11 @@
   resolved "https://registry.npmjs.org/@tamagui/types/-/types-1.110.1.tgz"
   integrity sha512-ZfHIVs2c8LWPiWaP9DPxJ0ZchKnY2zg0CmCZxHK37DUcyQSoboEWUAOhrb0XerN2YaJCo7aVyAGEI+/P3s18ng==
 
+"@tamagui/types@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/types/-/types-1.110.2.tgz"
+  integrity sha512-2wWRIfZz1R7JqvQYnZYqzOqvX6zgyW2P0KijWOi8wqBv1Ejakk7pJdC96lgCI1sZXG/YlXBpWcAAS9OPctCKqg==
+
 "@tamagui/use-callback-ref@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/use-callback-ref/-/use-callback-ref-1.110.1.tgz"
@@ -2594,6 +2765,11 @@
   resolved "https://registry.npmjs.org/@tamagui/use-did-finish-ssr/-/use-did-finish-ssr-1.110.1.tgz"
   integrity sha512-llY/LwVcHvr+kwpbAD+JhIHZxAcImAIApt0AJA8gM8+VbFEAhIVq/3hXYjZ0pNUf/H2eVid6fKEK1ohMbXz3YA==
 
+"@tamagui/use-did-finish-ssr@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/use-did-finish-ssr/-/use-did-finish-ssr-1.110.2.tgz"
+  integrity sha512-sw+Ad9quJhDxFfGB0f7n1yn63ZGLoZO5SeDqMSfHZDMlUsCgMk5haZrUDpfW53yOqr2r0m9+2VdKCG1h34Nz9w==
+
 "@tamagui/use-direction@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/use-direction/-/use-direction-1.110.1.tgz"
@@ -2613,10 +2789,22 @@
   dependencies:
     "@tamagui/constants" "1.110.1"
 
+"@tamagui/use-event@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/use-event/-/use-event-1.110.2.tgz"
+  integrity sha512-nBM3OfMSpOpT2c39FSeyZ1jipP41z1n3GyaE2WE0rNddLHYNawYEa+Vff3LhoIZhVegJLpYPwB1xdkCJNVw7Ig==
+  dependencies:
+    "@tamagui/constants" "1.110.2"
+
 "@tamagui/use-force-update@1.110.1":
   version "1.110.1"
   resolved "https://registry.npmjs.org/@tamagui/use-force-update/-/use-force-update-1.110.1.tgz"
   integrity sha512-0h+xvwxx6+q4PECe2yViKvDOhEKpmvkhC2omZtlglZVQmoWHkrnxxXoeBGzLF7+sRjk1abnXjp0T3ES3hOi54g==
+
+"@tamagui/use-force-update@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/use-force-update/-/use-force-update-1.110.2.tgz"
+  integrity sha512-Mwyi7R2kaDSHgWn5zc30IpLtdB4Z7SdDG4+WC45OD3CpspSn6NSaPPvM9M9UFaBmWvSob/KZl4icBuCY3t4Ytg==
 
 "@tamagui/use-keyboard-visible@1.110.1":
   version "1.110.1"
@@ -2663,6 +2851,21 @@
     "@tamagui/use-did-finish-ssr" "1.110.1"
     "@tamagui/use-event" "1.110.1"
     "@tamagui/use-force-update" "1.110.1"
+
+"@tamagui/web@1.110.2":
+  version "1.110.2"
+  resolved "https://registry.npmjs.org/@tamagui/web/-/web-1.110.2.tgz"
+  integrity sha512-7I0EFByt4dzTBSXyuMSlaE2XvmN0d6SWLwu4G3l0LqStXZoxeSQwNtZLkM3PGb7Vww4pZxpf7NyHHdxYOontMQ==
+  dependencies:
+    "@tamagui/compose-refs" "1.110.2"
+    "@tamagui/constants" "1.110.2"
+    "@tamagui/helpers" "1.110.2"
+    "@tamagui/normalize-css-color" "1.110.2"
+    "@tamagui/timer" "1.110.2"
+    "@tamagui/types" "1.110.2"
+    "@tamagui/use-did-finish-ssr" "1.110.2"
+    "@tamagui/use-event" "1.110.2"
+    "@tamagui/use-force-update" "1.110.2"
 
 "@types/babel__core@^7.1.14":
   version "7.20.5"
@@ -2722,6 +2925,21 @@
 
 "@types/prop-types@*":
   version "15.7.12"
+
+"@types/react-native-vector-icons@^6.4.18":
+  version "6.4.18"
+  resolved "https://registry.npmjs.org/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.18.tgz"
+  integrity sha512-YGlNWb+k5laTBHd7+uZowB9DpIK3SXUneZqAiKQaj1jnJCZM0x71GDim5JCTMi4IFkhc9m8H/Gm28T5BjyivUw==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "^0.70"
+
+"@types/react-native@^0.70":
+  version "0.70.19"
+  resolved "https://registry.npmjs.org/@types/react-native/-/react-native-0.70.19.tgz"
+  integrity sha512-c6WbyCgWTBgKKMESj/8b4w+zWcZSsCforson7UdXtXMecG3MxCinYi6ihhrHVPyUrVzORsvEzK8zg32z4pK6Sg==
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-test-renderer@^18.0.0":
   version "18.3.0"
@@ -3385,14 +3603,34 @@ color-convert@^1.9.0:
 
 color-convert@^2.0.1:
   version "2.0.1"
+  resolved "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz"
+  integrity sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
   dependencies:
     color-name "~1.1.4"
 
+color-name@^1.0.0, color-name@1.1.3:
+  version "1.1.3"
+
 color-name@~1.1.4:
   version "1.1.4"
+  resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
+  integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-color-name@1.1.3:
-  version "1.1.3"
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
+color@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.npmjs.org/color/-/color-4.2.3.tgz"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 color2k@^2.0.2:
   version "2.0.3"
@@ -4358,6 +4596,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.3, graceful-fs@^4.1.6,
 graphemer@^1.4.0:
   version "1.4.0"
 
+hamt_plus@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/hamt_plus/-/hamt_plus-1.0.2.tgz"
+  integrity sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA==
+
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
 
@@ -4429,6 +4672,11 @@ http-errors@2.0.0:
 human-signals@^2.1.0:
   version "2.1.0"
 
+humps@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/humps/-/humps-2.0.1.tgz"
+  integrity sha512-E0eIbrFWUhwfXJmsbdjRQFQPrl5pTEoKlz163j1mTqqUnU9PgR4AgB8AIITzuB3vLBdxZXyZ9TDIrwB2OASz4g==
+
 iconv-lite@^0.6.2:
   version "0.6.3"
   dependencies:
@@ -4495,6 +4743,11 @@ is-array-buffer@^3.0.4:
 
 is-arrayish@^0.2.1:
   version "0.2.1"
+
+is-arrayish@^0.3.1:
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz"
+  integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
 
 is-async-function@^2.0.0:
   version "2.0.0"
@@ -5546,7 +5799,7 @@ node-dir@^0.1.17:
   dependencies:
     minimatch "^3.0.2"
 
-node-fetch@^2.2.0:
+node-fetch@^2.2.0, node-fetch@^2.6.0:
   version "2.7.0"
   dependencies:
     whatwg-url "^5.0.0"
@@ -5816,7 +6069,7 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-plist@^3.0.1, plist@^3.0.5:
+plist@^3.0.1, plist@^3.0.5, plist@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/plist/-/plist-3.1.0.tgz"
   integrity sha512-uysumyrvkUX0rX/dEVqt8gC3sTBzd4zoWfLeS29nb53imdaXVvLINYXTI2GNqzaMuvacNx4uJQ8+b3zXR0pkgQ==
@@ -5974,7 +6227,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   dependencies:
     loose-envify "^1.4.0"
@@ -6056,6 +6309,11 @@ react-native-asset@^2.1.1:
     sha1-file "^1.0.4"
     xcode "^2.0.0"
 
+react-native-dropdown-select-list@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.npmjs.org/react-native-dropdown-select-list/-/react-native-dropdown-select-list-2.0.5.tgz"
+  integrity sha512-TepbcagQVUMB6nLuIlVU2ghRpQHAECOeZWe8K04ymW6NqbKbxuczZSDFfdCiABiiQ2dFD+8Dz65y4K7/uUEqGg==
+
 react-native-reanimated@*:
   version "3.15.1"
   resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.15.1.tgz"
@@ -6086,12 +6344,17 @@ react-native-screens@^3.34.0, "react-native-screens@>= 3.0.0":
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
+react-native-select-dropdown@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/react-native-select-dropdown/-/react-native-select-dropdown-4.0.1.tgz"
+  integrity sha512-t4se17kALFcPb9wMbxig5dS1BE3pWRC6HPuFlM0J2Y6yhB1GsLqboy6an6R9rML8pRuGIJIxL29cbwEvPQwKxQ==
+
 react-native-splash-screen@^3.3.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/react-native-splash-screen/-/react-native-splash-screen-3.3.0.tgz"
   integrity sha512-rGjt6HkoSXxMqH4SQUJ1gnPQlPJV8+J47+4yhgTIan4bVvAwJhEeJH7wWt9hXSdH4+VfwTS0GTaflj1Tw83IhA==
 
-react-native-svg@^15.6.0, react-native-svg@>=12:
+react-native-svg@^15.6.0, "react-native-svg@>= 11.x", react-native-svg@>=12:
   version "15.6.0"
   resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-15.6.0.tgz"
   integrity sha512-TUtR+h+yi1ODsd8FHdom1TpjfWOmnaK5pri5rnSBXnMqpzq8o2zZfonHTjPX+nS3wb/Pu2XsoARgYaHNjVWXhQ==
@@ -6100,7 +6363,7 @@ react-native-svg@^15.6.0, react-native-svg@>=12:
     css-tree "^1.1.3"
     warn-once "0.1.1"
 
-react-native@*, react-native@>=0.57.0, react-native@>=0.60.0, react-native@>=0.64.0, react-native@0.75.2:
+react-native@*, "react-native@>= 0.67", react-native@>=0.57.0, react-native@>=0.60.0, react-native@>=0.64.0, react-native@0.75.2:
   version "0.75.2"
   dependencies:
     "@jest/create-cache-key-function" "^29.6.3"
@@ -6186,7 +6449,7 @@ react-test-renderer@18.3.1:
     react-shallow-renderer "^16.15.0"
     scheduler "^0.23.2"
 
-react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, "react@^18.2.0 || ^19.0.0", react@^18.3.1, react@>=16.8, "react@>=16.8 || ^17.0.0 || ^18.0.0", react@>=16.8.0, react@>=17.0.0, react@18.3.1:
+react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, "react@^18.2.0 || ^19.0.0", react@^18.3.1, react@>=16.13.1, react@>=16.8, "react@>=16.8 || ^17.0.0 || ^18.0.0", react@>=16.8.0, react@>=17.0.0, react@18.3.1:
   version "18.3.1"
   dependencies:
     loose-envify "^1.1.0"
@@ -6233,6 +6496,13 @@ recast@^0.21.0:
     esprima "~4.0.0"
     source-map "~0.6.1"
     tslib "^2.0.1"
+
+recoil@^0.7.7:
+  version "0.7.7"
+  resolved "https://registry.npmjs.org/recoil/-/recoil-0.7.7.tgz"
+  integrity sha512-8Og5KPQW9LwC577Vc7Ug2P0vQshkv1y3zG3tSSkWMqkWSwHmE+by06L8JtnGocjW6gcCvfwB3YtrJG6/tWivNQ==
+  dependencies:
+    hamt_plus "1.0.2"
 
 reflect.getprototypeof@^1.0.4:
   version "1.0.6"
@@ -6505,6 +6775,13 @@ simple-plist@^1.0.0:
     bplist-creator "0.1.0"
     bplist-parser "0.3.1"
     plist "^3.0.5"
+
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/simple-swizzle/-/simple-swizzle-0.2.2.tgz"
+  integrity sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
+  dependencies:
+    is-arrayish "^0.3.1"
 
 sisteransi@^1.0.5:
   version "1.0.5"
@@ -7274,7 +7551,7 @@ yargs@^15.1.0:
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
 
-yargs@^17.3.1, yargs@^17.6.2:
+yargs@^17.3.1, yargs@^17.6.2, yargs@^17.7.2:
   version "17.7.2"
   dependencies:
     cliui "^8.0.1"
