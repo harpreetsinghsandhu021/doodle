@@ -12,8 +12,12 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faHome} from '@fortawesome/free-solid-svg-icons/faHome';
 import Todos from './screens/todos';
 import {faList, faPlus} from '@fortawesome/free-solid-svg-icons';
-import {RecoilRoot} from 'recoil';
+import {RecoilRoot, useRecoilValue} from 'recoil';
 import AddTodo from './components/addTodo';
+import ReactNativeRecoilPersist, {
+  ReactNativeRecoilPersistGate,
+} from 'react-native-recoil-persist';
+import {authState} from './store/atoms';
 
 const tamaguiConfig = createTamagui(config);
 
@@ -31,7 +35,7 @@ function HomeTabs() {
     <Tab.Navigator
       screenOptions={{
         tabBarStyle: {
-          paddingBottom: 30,
+          paddingBottom: 25,
         },
       }}>
       <Tab.Screen
@@ -42,7 +46,7 @@ function HomeTabs() {
             return (
               <View
                 className={`p-4 rounded-full ${
-                  state.focused ? 'bg-black scale-125' : 'bg-[#f06d55]'
+                  state.focused ? 'bg-black scale-110' : 'bg-[#f06d55]'
                 }`}>
                 <FontAwesomeIcon
                   style={{color: 'white'}}
@@ -104,10 +108,13 @@ function HomeTabs() {
   );
 }
 
-function App(): React.JSX.Element {
+function OnBoardTabs() {
+  const user = useRecoilValue(authState);
+
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="onboarding-one">
+      <Stack.Navigator
+        initialRouteName={user.isLoggedIn ? 'hometabs' : 'onboarding-one'}>
         <Stack.Screen
           options={{
             headerShown: false,
@@ -138,6 +145,16 @@ function App(): React.JSX.Element {
         />
       </Stack.Navigator>
     </NavigationContainer>
+  );
+}
+
+function App(): React.JSX.Element {
+  return (
+    <RecoilRoot>
+      <ReactNativeRecoilPersistGate store={ReactNativeRecoilPersist}>
+        <OnBoardTabs />
+      </ReactNativeRecoilPersistGate>
+    </RecoilRoot>
   );
 }
 

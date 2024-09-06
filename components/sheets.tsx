@@ -66,15 +66,11 @@ const Drawer = () => {
             <H2
               fontFamily={fontFamilies.ROBOTO.bold}
               className="text-black text-4xl pr-20">
-              Implement User Authentication
+              {modalState.activeTodo?.title}
             </H2>
 
             <Text className="text-lg text-gray-500">
-              Develop a user authentication system for the application to
-              enhance security and user experience. Start by setting up a login
-              and registration page using React for the frontend. Utilize
-              Firebase Authentication for easy integration and management of
-              user accounts.
+              {modalState.activeTodo?.description}
             </Text>
             <Text className="text-lg text-gray-500">
               Ensure that users can register with their email and password, and

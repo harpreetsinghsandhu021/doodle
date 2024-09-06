@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   Button,
   H2,
@@ -14,7 +14,13 @@ import TodoItem from '../components/todo';
 import {PortalProvider} from '@tamagui/portal';
 import {config} from '@tamagui/config';
 import Drawer from '../components/sheets';
-import {RecoilRoot} from 'recoil';
+import axios from 'axios';
+import {useRecoilValue} from 'recoil';
+import {authState} from '../store/atoms';
+import Toast from 'react-native-toast-message';
+import {Todo} from '../types/todo';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 
 const tamaguiConfig = createTamagui(config);
 
@@ -29,21 +35,75 @@ export const colors = [
 ];
 
 const Todos = () => {
+  const [loading, setLoading] = useState(false);
+  const [todos, setTodos] = useState<Todo[]>([]);
+  const user = useRecoilValue(authState);
+
+  const fetchUserTodos = async () => {
+    setLoading(true);
+    try {
+      const response = await axios.get(
+        `http://10.0.2.2:8000/api/v1/todos/${user.user?.id}`,
+        {
+          headers: {
+            Authorization: 'Bearer ' + user.token,
+          },
+        },
+      );
+
+      if (response.status === 200) {
+        setTodos(response.data.data);
+      }
+    } catch (error: any) {
+      if (error.response) {
+        // console.error('Server Error:', error.response.data.message);
+
+        // if(error.response.status === 401) return navigator
+
+        Toast.show({
+          text1: 'Error',
+          text2: error.response.data.message,
+          position: 'top',
+          type: 'error',
+          visibilityTime: 4000,
+          autoHide: true,
+          text1Style: {
+            fontSize: 17,
+          },
+          text2Style: {
+            fontSize: 14,
+            textTransform: 'capitalize',
+          },
+        });
+      } else if (error.request) {
+        console.error('Network Error:', error.request);
+      } else {
+        console.error('Error:', error.message);
+      }
+    }
+    setLoading(false);
+  };
+  useEffect(() => {
+    fetchUserTodos();
+  }, []);
   return (
-    <RecoilRoot>
-      <TamaguiProvider config={tamaguiConfig}>
-        <ScrollView className="px-4">
-          <Navbar />
-          <Drawer />
-          <Heading title="All" subtitle="Todos" />
-          <YStack className="my-2" gap={20}>
-            {Array.from({length: 20}).map((_, i) => (
-              <TodoItem key={i} backgroundColor={colors[i % colors.length]} />
+    <TamaguiProvider config={tamaguiConfig}>
+      <ScrollView className="px-4">
+        <Navbar />
+        <Heading title="All" subtitle="Todos" />
+        <YStack className="my-2" gap={20}>
+          {!loading &&
+            todos.length > 0 &&
+            todos.map((todo, i) => (
+              <TodoItem
+                data={todo}
+                key={i}
+                backgroundColor={colors[i % colors.length]}
+              />
             ))}
-          </YStack>
-        </ScrollView>
-      </TamaguiProvider>
-    </RecoilRoot>
+        </YStack>
+      </ScrollView>
+    </TamaguiProvider>
   );
 };
 

@@ -19,24 +19,21 @@ import Navbar from '../components/navbar';
 import {fontFamilies} from '../utils/fonts';
 import TodoStatus from '../components/todoStatus';
 import Recents from '../components/recents';
-import {RecoilRoot} from 'recoil';
 import Drawer from '../components/sheets';
 
 const tamaguiConfig = createTamagui(config);
 
 export default function HomeScreen({navigation}: {navigation: any}) {
   return (
-    <RecoilRoot>
-      <TamaguiProvider config={tamaguiConfig}>
-        <ScrollView className="px-4">
-          <Navbar />
-          <Drawer />
-          <Heading title="Your" subtitle="Todos" />
-          <TodoStatus />
-          <Recents />
-        </ScrollView>
-      </TamaguiProvider>
-    </RecoilRoot>
+    <TamaguiProvider config={tamaguiConfig}>
+      <ScrollView className="px-4">
+        <Navbar />
+        <Drawer />
+        <Heading title="Your" subtitle="Todos" />
+        <TodoStatus />
+        <Recents />
+      </ScrollView>
+    </TamaguiProvider>
   );
 }
 

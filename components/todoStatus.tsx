@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Text, View, XStack, YStack} from 'tamagui';
 // import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faMugSaucer} from '@fortawesome/free-solid-svg-icons/faMugSaucer';
@@ -6,6 +6,8 @@ import {faRecycle} from '@fortawesome/free-solid-svg-icons/faRecycle';
 import {fontFamilies} from '../utils/fonts';
 
 const TodoStatus = () => {
+  useEffect(() => {}, []);
+
   return (
     <View className="my-4">
       <XStack gap={15} className="flex">

@@ -11,6 +11,10 @@ import {config} from '@tamagui/config';
 import {Circle, Rect, Svg} from 'react-native-svg';
 import {fontFamilies} from '../utils/fonts';
 import {ArrowRight} from '@tamagui/lucide-icons';
+import {useRecoilCallback, useRecoilValue} from 'recoil';
+import {authState} from '../store/atoms';
+import {useEffect} from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const tamaguiConfig = createTamagui(config);
 
