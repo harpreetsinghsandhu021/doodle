@@ -1,3 +1,5 @@
+import React, {useState} from 'react';
+
 import {
   TamaguiProvider,
   Text,
@@ -6,24 +8,20 @@ import {
   Image,
   Button,
   Form,
-  H3,
   Spinner,
   H4,
-  XStack,
   H1,
-  H6,
   ScrollView,
   YStack,
 } from 'tamagui';
 import {config} from '@tamagui/config';
-import {useState} from 'react';
 import {fontFamilies} from '../utils/fonts';
-import {TextInput, ToastAndroid} from 'react-native';
+import {TextInput} from 'react-native';
 import {useForm, Controller} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import authSchema from '../types/auth/schema';
 import {auth} from '../types/auth/types';
-import axios, {AxiosError} from 'axios';
+import axios from 'axios';
 
 import Toast from 'react-native-toast-message';
 import {useSetRecoilState} from 'recoil';
@@ -46,8 +44,6 @@ const SignUp = ({navigation}: {navigation: any}) => {
   });
 
   const onSubmit = async (data: auth) => {
-    console.log('running');
-
     setStatus('submitting');
 
     try {
@@ -56,8 +52,6 @@ const SignUp = ({navigation}: {navigation: any}) => {
         email: data.emailAddress,
         password: data.password,
       });
-
-      console.log(res.data);
 
       if (res.status === 201) {
         Toast.show({
@@ -205,7 +199,7 @@ const SignUp = ({navigation}: {navigation: any}) => {
                 <Image
                   tintColor={form.formState.errors.password && 'red'}
                   className="absolute z-50 h-6 w-6 left-4 top-4"
-                  src={require('../assets/images/lock.png')}
+                  source={require('../assets/images/lock.png')}
                 />
                 <Controller
                   control={form.control}

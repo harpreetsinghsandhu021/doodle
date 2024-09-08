@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import {
   Button,
   H2,
@@ -9,18 +9,14 @@ import {
 } from 'tamagui';
 import {Heading} from './home';
 import Navbar from '../components/navbar';
-import Recents from '../components/recents';
 import TodoItem from '../components/todo';
-import {PortalProvider} from '@tamagui/portal';
 import {config} from '@tamagui/config';
-import Drawer from '../components/sheets';
 import axios from 'axios';
 import {useRecoilValue} from 'recoil';
 import {authState} from '../store/atoms';
 import Toast from 'react-native-toast-message';
 import {Todo} from '../types/todo';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
+import {useFocusEffect} from '@react-navigation/native';
 
 const tamaguiConfig = createTamagui(config);
 
@@ -83,9 +79,12 @@ const Todos = () => {
     }
     setLoading(false);
   };
-  useEffect(() => {
-    fetchUserTodos();
-  }, []);
+
+  useFocusEffect(
+    useCallback(() => {
+      fetchUserTodos();
+    }, []),
+  );
   return (
     <TamaguiProvider config={tamaguiConfig}>
       <ScrollView className="px-4">

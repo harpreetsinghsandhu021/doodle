@@ -1,37 +1,26 @@
-import {
-  TamaguiProvider,
-  Text,
-  View,
-  createTamagui,
-  Image,
-  Button,
-  Form,
-  H3,
-  Spinner,
-  H4,
-  XStack,
-  H1,
-  ScrollView,
-  H6,
-} from 'tamagui';
+import React from 'react';
+import {TamaguiProvider, createTamagui, H1, ScrollView} from 'tamagui';
 import {config} from '@tamagui/config';
 import Navbar from '../components/navbar';
 import {fontFamilies} from '../utils/fonts';
 import TodoStatus from '../components/todoStatus';
 import Recents from '../components/recents';
 import Drawer from '../components/sheets';
+import {Toast} from 'react-native-toast-message/lib/src/Toast';
 
 const tamaguiConfig = createTamagui(config);
 
 export default function HomeScreen({navigation}: {navigation: any}) {
   return (
     <TamaguiProvider config={tamaguiConfig}>
+      <Toast />
+
       <ScrollView className="px-4">
         <Navbar />
         <Drawer />
         <Heading title="Your" subtitle="Todos" />
         <TodoStatus />
-        <Recents />
+        <Recents navigation={navigation} />
       </ScrollView>
     </TamaguiProvider>
   );

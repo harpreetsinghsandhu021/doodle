@@ -33,7 +33,7 @@ const Drawer = () => {
           } `}>
           <Pressable
             onPress={() => setModalState({...modalState, visible: false})}
-            className="absolute -top-14 left-1/2 -translate-x-1/2 border-2 border-b-4 bg-white rounded-full w-10 
+            className="absolute -top-14 left-1/2 -translate-x-1/2 border-2 border-b-4 bg-white rounded-full w-10
           h-10 flex justify-center items-center">
             <Image
               className="w-8 h-8"
@@ -65,7 +65,7 @@ const Drawer = () => {
             )}
             <H2
               fontFamily={fontFamilies.ROBOTO.bold}
-              className="text-black text-4xl pr-20">
+              className="text-black text-4xl pb-2">
               {modalState.activeTodo?.title}
             </H2>
 

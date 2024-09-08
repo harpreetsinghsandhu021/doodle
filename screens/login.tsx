@@ -48,8 +48,6 @@ const Login = ({navigation}: {navigation: any}) => {
   });
 
   const onSubmit = async (data: Partial<auth>) => {
-    console.log('running');
-
     setStatus('submitting');
 
     try {
@@ -57,8 +55,6 @@ const Login = ({navigation}: {navigation: any}) => {
         email: data.emailAddress,
         password: data.password,
       });
-
-      console.log(res.data);
 
       if (res.status === 200) {
         Toast.show({

@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {H2, H3, Image, Text, View, XStack, YStack} from 'tamagui';
+import {H3, Image, Text, View, XStack, YStack} from 'tamagui';
 import {fontFamilies} from '../utils/fonts';
-import {useRecoilState, useRecoilValue} from 'recoil';
+import {useRecoilState} from 'recoil';
 import {authState} from '../store/atoms';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import Toast from 'react-native-toast-message';
-import CustomToast from './ui/toast';
 
 const Navbar = () => {
   const [user, setUser] = useRecoilState(authState);
@@ -70,10 +68,10 @@ const Navbar = () => {
     <View className="mb-4">
       <Toast />
       <XStack className="mt-4 -z-20">
-        <View className="bg-primary border-2 overflow-hidden w-[60px] h-[60px] flex justify-center items-center rounded-full">
+        <View className="bg-primary border-[3px] overflow-hidden w-[60px] h-[60px] flex justify-center items-center rounded-full">
           <Image
             className="w-12 translate-y-1 h-12"
-            src={require('../assets/images/user2.png')}
+            source={require('../assets/images/user2.png')}
           />
         </View>
         <YStack className="pl-2">
@@ -81,10 +79,10 @@ const Navbar = () => {
             <H3
               style={{fontFamily: fontFamilies.ROBOTO.normal}}
               className="text-black text-2xl">
-              Hi {user.user?.name}👋
+              Hi {user.user?.name} 👋
             </H3>
           ) : (
-            <View className="w-full h-4 bg-gray-200 rounded-full animate-pulse"></View>
+            <View className="w-full h-4 bg-gray-200 rounded-full animate-pulse" />
           )}
           <Text
             className="text-gray-500 text-lg"

@@ -1,4 +1,6 @@
+import {z} from 'zod';
 import {User} from '../user';
+import todoSchema from './schema';
 
 export interface Todo {
   id: number;
@@ -17,3 +19,5 @@ export enum Status {
   InProcess = 'inprocess',
   Cancelled = 'cancelled',
 }
+
+export type createTodo = z.infer<typeof todoSchema>;

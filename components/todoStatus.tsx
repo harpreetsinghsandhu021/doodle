@@ -33,7 +33,7 @@ const TodoStatus = () => {
         </XStack>
       </XStack>
       <XStack gap={15} className="flex mt-3">
-        <XStack className="flex-1 bg-[#53C0C3] rounded-xl p-4 border-2 border-b-[8px] border-black">
+        <XStack className="flex-1 bg-green-200 rounded-xl p-4 border-2 border-b-[8px] border-black">
           <YStack>
             <Text
               fontFamily={fontFamilies.ROBOTO.bold}

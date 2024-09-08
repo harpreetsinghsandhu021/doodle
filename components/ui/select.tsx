@@ -1,8 +1,9 @@
+import React from 'react';
 import {ChevronDown, ChevronUp} from '@tamagui/lucide-icons';
 import {useState} from 'react';
 import {StyleSheet} from 'react-native';
 import SelectDropdown from 'react-native-select-dropdown';
-import {Button, ButtonIcon, Text, View} from 'tamagui';
+import {Text, View} from 'tamagui';
 
 const data = [
   {title: 'On Going', value: 'ongoing'},
@@ -11,14 +12,18 @@ const data = [
   {title: 'Cancelled', value: 'cancelled'},
 ];
 
-export default function SelectDemoItem() {
-  const [val, setVal] = useState('');
-
+export default function SelectDemoItem({
+  onChange,
+}: {
+  onChange: (item: any) => void;
+}) {
   return (
     <SelectDropdown
       data={data}
-      onSelect={(selectedItem, index) => {
-        console.log(selectedItem, index);
+      defaultValue={data[0]}
+      onSelect={selectedItem => {
+        // console.log(selectedItem, index);
+        onChange(selectedItem);
       }}
       renderButton={(selectedItem, isOpened) => {
         return (
